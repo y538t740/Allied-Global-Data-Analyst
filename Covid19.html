@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>   
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" href="Covid19.css">
+	<script src="Covid19.js"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<h1>Covid 19 Data in 2020</h1> <h2>City of Chicago</h2>
+	</div>
+	<div class = "row">
+		    <div class='selectBox'>
+			    <span id = "myText" name = "myText">SELECT MONTH</span>
+				<select onchange="loadXMLDoc(this.value)">
+				   <div id="boxes">
+				   <option></option>
+				   <option value='00'>All</option>
+				   <option value='03'>March</option>
+				   <option value='04'>April</option>
+				   <option value='05'>May</option>
+				   <option value='06'>June</option>
+				   <option value='07'>July</option>
+				   <option value='08'>August</option>
+				   <option value='09'>September</option>
+				   </div>
+				</select>
+			</div><br></br>
+			<span id = "Text" name = "Text">People Tested Positive</span>
+			<div>
+			<svg width='1500' height='500'></svg>
+			</div>
+			<table id='database' cellpadding='5 px' style="text-align:left;">
+			</table>			
+
+	</div>
+	
+	<script src="Covid19.js"></script>
+		
+</body>
+
+</html>
